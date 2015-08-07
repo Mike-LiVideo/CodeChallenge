@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/MainTitle.PageTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:text="@string/test_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_bg"
+            android:gravity="center"
+            android:paddingBottom="45dp"
+            android:paddingLeft="95dp"
+            android:paddingRight="100dp"
+            android:paddingTop="22dp">
+
+            <ListView
+                android:id="@+id/fragment_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <EditText
+                android:padding="3dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/search_box"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/boarder"
+                android:hint="Search"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
